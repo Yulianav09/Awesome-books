@@ -7,18 +7,18 @@ class BookList {
     this.myBooks = [];
     this.initialize();
   }
-​
+
   initialize() {
     // Check if there are any saved books in local storage
     if (localStorage.getItem('books')) {
       this.myBooks = JSON.parse(localStorage.getItem('books'));
     }
-​
+
     // Display saved books on page load
     if (this.myBooks.length > 0) {
       this.displayBooks(this.myBooks);
     }
-​
+
     // Add event listener for form submission
     this.form.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -30,7 +30,7 @@ class BookList {
       this.displayBooks(this.myBooks);
       this.form.reset();
     });
-​
+
     // Add event listener for removing book from list
     this.bookList.addEventListener('click', (e) => {
       if (e.target.classList.contains('remove')) {
@@ -42,7 +42,7 @@ class BookList {
       }
     });
   }
-​
+
   displayBooks(books) {
     this.bookList.innerHTML = '';
     books.forEach((book, index) => {
@@ -56,6 +56,6 @@ class BookList {
     });
   }
 }
-​
+
 const myBookList = new BookList('#input-form', '#Title', '#Author', '#display-area');
 myBookList();
