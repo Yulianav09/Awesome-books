@@ -184,7 +184,7 @@ div.contact {
 }
 
 .contact_list_item:nth-child(odd) {
-  background-color: white;
+  background-color: #ffffff75;
   list-style-type: disc;
 }
 
