@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: rgb(21, 43, 63);
+  border-color: white;
+  color: white;
 }
 
 .navbar {
@@ -34,14 +37,14 @@ h1 {
 }
 
 .navbar_menu_item:nth-child(odd) {
-  background-color: white;
+  background-color: rgb(21, 43, 63);;
   list-style-type: none;
 }
 
 #datetime {
   height: 2rem;
   width: 20%;
-  color: black;
+  color: white;
   float: right;
   padding: 0.5rem;
   font-weight: bold;
@@ -60,7 +63,7 @@ h1 {
 }
 
 form {
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 100%;
   justify-content: center;
