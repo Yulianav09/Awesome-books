@@ -37,7 +37,7 @@ h1 {
 }
 
 .navbar_menu_item:nth-child(odd) {
-  background-color: rgb(21, 43, 63);;
+  background-color: rgb(21, 43, 63);
   list-style-type: none;
 }
 

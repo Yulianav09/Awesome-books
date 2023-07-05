@@ -42,5 +42,5 @@ navContact.addEventListener('click', () => {
   contactHeader.style.display = 'inline';
   contact.style.display = 'inline';
   addNewHeader.style.display = 'none';
-  Addbook.style.display = 'none';
+  Addbook.style.display = 'none';
 });
